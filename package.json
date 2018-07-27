@@ -1,10 +1,10 @@
 {
   "name": "dwid-web-design",
   "version": "0.0.1",
-  "description": "A project for command line scaffolding of Web Design in 4 Minutes by Jeremy Thomas.",
+  "description": "A project for command line scaffolding of Jeremy Thomas's Web Design in 4 Minutes.",
   "main": "index.js",
   "bin": {
-    "dwid": "./bin/dwid"
+    "dwid-web-design": "./bin/dwid"
   },
   "scripts": {
     "test": "mocha"
