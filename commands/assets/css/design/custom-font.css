@@ -1,0 +1,137 @@
+/* Base styles */
+
+/* 08 Custom font */
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+    /* 08 Custom font */
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    -moz-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.3em;
+    /* 03 Spacing */
+    line-height: 1.5;
+    padding: 4em 1em;
+    /* 04 Color and contrast */
+    color: #555;
+}
+
+/* 03 Spacing */
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+/* 04 Color and contrast */
+h1,
+h2,
+strong {
+    color: #333;
+    /* 08 Custom font */
+    font-weight: 500;
+}
+
+/* 06 Primary color */
+a {
+    color: #e81c4f;
+}
+
+a strong {
+    color: inherit;
+}
+
+hr {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #d8dee9;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* 05 Balance */
+code,
+pre {
+    background: #eee;
+    /* 07 Secondary colors */
+    background: #f5f7f9;
+    border-bottom: 1px solid #d8dee9;
+    color: #a7adba;
+    -moz-font-smoothing: grayscale;
+    -webkit-font-smoothing: initial;
+}
+
+code {
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+}
+
+pre {
+    padding: 1em;
+    overflow: auto;
+    white-space: pre-wrap;
+    /* 07 Secondary colors */
+    border-left: 2px solid #69c;
+}
+
+/* 01 Centering */
+header, main {
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+footer {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 4em;
+    text-align: center;
+}
+
+/* 07 Secondary colors */
+.selector {
+    color: #ec5f67;
+}
+
+.keyword {
+    color: #ab7967;
+}
+
+.unit {
+    color: #fac863;
+}
+
+.attribute {
+    color: #5fb3b3;
+}
+
+.number {
+    color: #f99157;
+}
+
+.string {
+    color: #c594c5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

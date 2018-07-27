@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Design in 4 minutes</title>
+    <meta name="description" content="Learn the basics of web design in 4 minutes with this interactive tutorial.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Web Design in 4 minutes</h1>
+    <p>
+        <a href="https://jgthms.com" target="_blank">by Jeremy Thomas</a>
+    </p>
+</header>
+
+<main>
+    <section>
+        <p>Let's say you have a product, a portfolio, or just an idea you want to share with everyone on your
+            <em>own</em> website. Before you publish it on the internet, you want to make it look attractive,
+            professional, or at least <em>decent</em> to look at.</p>
+        <p>What is the <i>first thing</i> you need to work on?</p>
+    </section>
+
+    <section>
+        <h2>Content</h2>
+        <p>The purpose of <strong>design</strong> is to enhance the presentation of the content it's applied to. It
+            might sound obvious, but content being the <strong>primary</strong> element of a website, it should not be
+            established as an afterthought.</p>
+        <p>Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling
+            this textual content will go a long way.</p>
+        <p>Let's assume you've already finalised the content you want to publish and just created an empty <code>style.css</code>
+            file, what is the <i>first rule</i> you can write?</p>
+    </section>
+
+    <section>
+        <h2>Centering</h2>
+        <p>Long lines of text can be hard to parse, and thus hard to <strong>read</strong>. Setting a limit of
+            characters per line greatly enhances the readability and appeal of a wall of text.</p>
+        <pre><span class="selector">body</span> {
+  <span class="attribute">margin</span>: <span class="number">0</span> auto;
+  <span class="attribute">max-width</span>: <span class="number">50</span><span class="unit">em</span>;
+}</pre>
+        <p>After styling the text <em>blocks</em>, what about styling the <i>text itself</i>?</p>
+    </section>
+
+    <section>
+        <h2>Font family</h2>
+        <p>The browser's font defaults to <code>"Times"</code>, which can look unappealing (mostly because it is the
+            "unstyled" font). Switching to a <strong>sans-serif</strong> font like <code>"Helvetica"</code> or <code>"Arial"</code>
+            can vastly improve the look of your page.</p>
+        <pre><span class="selector">body</span> {
+  <span class="attribute">font-family</span>: <span class="string">"Helvetica"</span>, <span
+                    class="string">"Arial"</span>, sans-serif;
+}</pre>
+        <p><em>If you want to stick with a serif font, try <code>"Georgia"</code>.</em></p>
+        <p>While this makes the text more <em>appealing</em>, let's also make it <i>more readable</i>.
+        </p>
+    </section>
+</main>
+</body>
+</html>

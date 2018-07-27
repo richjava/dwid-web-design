@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Design in 4 minutes</title>
+    <meta name="description" content="Learn the basics of web design in 4 minutes with this interactive tutorial.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Web Design in 4 minutes</h1>
+    <p>
+        <a href="https://jgthms.com" target="_blank">by Jeremy Thomas</a>
+    </p>
+</header>
+
+<main>
+    <section>
+        <p>Let's say you have a product, a portfolio, or just an idea you want to share with everyone on your
+            <em>own</em> website. Before you publish it on the internet, you want to make it look attractive,
+            professional, or at least <em>decent</em> to look at.</p>
+        <p>What is the <i>first thing</i> you need to work on?</p>
+    </section>
+
+    <section>
+        <h2>Content</h2>
+        <p>The purpose of <strong>design</strong> is to enhance the presentation of the content it's applied to. It
+            might sound obvious, but content being the <strong>primary</strong> element of a website, it should not be
+            established as an afterthought.</p>
+        <p>Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling
+            this textual content will go a long way.</p>
+        <p>Let's assume you've already finalised the content you want to publish and just created an empty <code>style.css</code>
+            file, what is the <i>first rule</i> you can write?</p>
+    </section>
+
+    <section>
+        <h2>Centering</h2>
+        <p>Long lines of text can be hard to parse, and thus hard to <strong>read</strong>. Setting a limit of
+            characters per line greatly enhances the readability and appeal of a wall of text.</p>
+        <pre><span class="selector">body</span> {
+  <span class="attribute">margin</span>: <span class="number">0</span> auto;
+  <span class="attribute">max-width</span>: <span class="number">50</span><span class="unit">em</span>;
+}</pre>
+        <p>After styling the text <em>blocks</em>, what about styling the <i>text itself</i>?</p>
+    </section>
+
+    <section>
+        <h2>Font family</h2>
+        <p>The browser's font defaults to <code>"Times"</code>, which can look unappealing (mostly because it is the
+            "unstyled" font). Switching to a <strong>sans-serif</strong> font like <code>"Helvetica"</code> or <code>"Arial"</code>
+            can vastly improve the look of your page.</p>
+        <pre><span class="selector">body</span> {
+  <span class="attribute">font-family</span>: <span class="string">"Helvetica"</span>, <span
+                    class="string">"Arial"</span>, sans-serif;
+}</pre>
+        <p><em>If you want to stick with a serif font, try <code>"Georgia"</code>.</em></p>
+        <p>While this makes the text more <em>appealing</em>, let's also make it <i>more readable</i>.</p>
+    </section>
+
+    <section>
+        <h2>Spacing</h2>
+        <p>When a page looks "broken" to a user, it's usually a <strong>spacing</strong> issue. Providing space both
+            <em>around</em> and <em>within</em> your content can increase the appeal of your page.</p>
+        <pre><span class="selector">body</span> {
+  <span class="attribute">line-height</span>: <span class="number">1.5</span>;
+  <span class="attribute">padding</span>: <span class="number">4</span><span class="unit">em</span> <span
+                    class="number">1</span><span class="unit">em</span>;
+}
+
+<span class="selector">h2</span> {
+  <span class="attribute">margin-top</span>: <span class="number">1</span><span class="unit">em</span>;
+  <span class="attribute">padding-top</span>: <span class="number">1</span><span class="unit">em</span>;
+}</pre>
+        <p>While the layout has greatly improved so far, let's apply more <i>subtle changes</i>.</p>
+    </section>
+
+    <section>
+        <h2>Color &amp; contrast</h2>
+        <p>Black text on a white background can be harsh on the eyes. Opting for a softer shade of black for body text
+            makes the page more <strong>comfortable</strong> to read.</p>
+        <pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="number">#555</span>;
+}</pre>
+        <p>And in order to keep a decent level of <strong>contrast</strong>, let's pick a darker shade for <strong>important</strong>
+            words</p>
+        <pre><span class="selector">h1</span>,
+<span class="selector">h2</span>,
+<span class="selector">strong</span> {
+  <span class="attribute">color</span>: <span class="number">#333</span>;
+}</pre>
+        <p>While most of the page has been improved visually, some elements (like the code snippets) still seem <i>out
+            of place</i>.</p>
+    </section>
+
+    <section>
+        <h2>Balance</h2>
+        <p>It only takes a few additional touches to correct the balance of the page:</p>
+        <pre><span class="selector">code</span>,
+<span class="selector">pre</span> {
+  <span class="attribute">background</span>: <span class="number">#eee</span>;
+}
+
+<span class="selector">code</span> {
+  <span class="attribute">padding</span>: <span class="number">2</span>px <span class="number">4</span>px;
+  <span class="attribute">vertical-align</span>: text-bottom;
+}
+
+<span class="selector">pre</span> {
+  <span class="attribute">padding</span>: <span class="number">1</span>em;
+}</pre>
+        <p>At this point, you might want to make your page stand out and give it <i>identity</i>.</p>
+    </section>
+
+    <section>
+        <h2>Primary color</h2>
+        <p>Most brands have a <strong>primary color</strong> that acts as a visual accent. On a website, this accent can
+            be used to provide emphasis on interactive elements, like <strong>links</strong>.</p>
+        <pre><span class="selector">a</span> {
+  <span class="attribute">color</span>: <span class="number">#e81c4f</span>;
+}</pre>
+        <p>But to keep the balance, we will need some <i>additional colors</i>.</p>
+    </section>
+
+    <section>
+        <h2>Secondary colors</h2>
+        <p>The accent color can be complemented with more <em>subtle</em> shades, to be used on borders, backgrounds, or
+            even the body text.</p>
+        <pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="number">#566b78</span>;
+}
+
+<span class="selector">code</span>,
+<span class="selector">pre</span> {
+  <span class="attribute">background</span>: <span class="number">#f5f7f9</span>;
+  <span class="attribute">border-bottom</span>: <span class="number">1</span><span class="unit">px</span> solid <span
+                    class="number">#d8dee9</span>;
+  <span class="attribute">color</span>: <span class="number">#a7adba</span>;
+}
+
+<span class="selector">pre</span> {
+  <span class="attribute">border-left</span>: <span class="number">2</span><span class="unit">px</span> solid <span
+                    class="number">#69c</span>;
+}</pre>
+        <p>Having changed the shades, why not change the <i>shapes</i>...</p>
+    </section>
+
+    <section>
+        <h2>Custom font</h2>
+        <p>Since text is the main content of a webpage, using a <strong>custom font</strong> gives the page even more
+            noticeable identity.</p>
+        <p>While you can embed your own webfont or use an online service like <a href="https://typekit.com"
+                                                                                 target="_blank">Typekit</a>, let's use
+            <code>"Roboto"</code> from the free <a href="https://fonts.google.com" target="_blank">Google Fonts</a>
+            service:</p>
+        <pre><span class="keyword">@import</span> <span class="string">'https://fonts.googleapis.com/css?family=Roboto:300,400,500'</span>;
+
+<span class="selector">body</span> {
+  <span class="attribute">font-family</span>: <span class="string">"Roboto"</span>, <span
+                    class="string">"Helvetica"</span>, <span class="string">"Arial"</span>, sans-serif;
+}</pre>
+        <p>After enhancing your identity through <em>text</em>, how about adding a <i>thousand words</i>...</p>
+    </section>
+</main>
+</body>
+</html>

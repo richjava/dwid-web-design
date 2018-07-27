@@ -1,0 +1,38 @@
+/* Base styles */
+
+hr {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #d8dee9;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+pre {
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+/* 01 Centering */
+header, main {
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+footer {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 4em;
+    text-align: center;
+}
+

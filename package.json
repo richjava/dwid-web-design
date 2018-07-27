@@ -1,0 +1,45 @@
+{
+  "name": "dwid-web-design",
+  "version": "0.0.1",
+  "description": "A project for command line scaffolding of Web Design in 4 Minutes by Jeremy Thomas.",
+  "main": "index.js",
+  "bin": {
+    "dwid": "./bin/dwid"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richjava/dwid-web-design.git"
+  },
+  "keywords": [
+    "dwid",
+    "scaffold",
+    "cli",
+    "Web Design in 4 Minutes"
+  ],
+  "author": "Richard Lovell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richjava/dwid-web-design/issues"
+  },
+  "homepage": "https://github.com/richjava/dwid-web-design",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "chalk": "^2.4.1",
+    "cli-table": "*",
+    "commander": "*",
+    "figlet": "*",
+    "inquirer": "*",
+    "node-emoji": "*",
+    "promise-while": "^1.0.1",
+    "prompt": "^1.0.0",
+    "request": "*"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "sinon": "^5.0.10"
+  }
+}
