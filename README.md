@@ -3,6 +3,8 @@ A tutorial project for command line scaffolding of Jeremy Thomas's [Web Design i
 
 This tool will create the Web Design in 4 minutes project in a directory of your choice on your computer.
 
+![Introduction to Dwid Web Design](https://raw.githubusercontent.com/richjava/dwid-web-design/master/images/intro-screen-cap.gif)
+
 ## Installation
 ### In short:
 ````
